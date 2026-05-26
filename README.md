@@ -77,22 +77,22 @@ See [`docs/architecture.md`](docs/architecture.md) for the full
 diagram and component breakdown.
 
 High level:
-TimeCamp API
+TimeCamp API  
 │
-▼
-[ Ingestion ] ──▶ raw entries (Bronze)
-│
-▼
-[ Normalization ] ──▶ timezone-corrected, deduped entries (Silver)
-│
-▼
-[ Risk detection ] ──▶ flagged entries + severity
-│
-▼
-[ Aggregation ] ──▶ per-client, per-VA summaries (Gold)
-│
-▼
-[ PDF generation ] ──▶ client-ready reports
+▼  
+[ Ingestion ] --> raw entries (Bronze)
+│  
+▼  
+[ Normalization ] --> timezone-corrected, deduped entries (Silver)
+│  
+▼  
+[ Risk detection ] --> flagged entries + severity
+│  
+▼  
+[ Aggregation ] --> per-client, per-VA summaries (Gold)
+│  
+▼  
+[ PDF generation ] --> client-ready reports
 
 The Bronze/Silver/Gold pattern wasn't accidental - it's the same
 medallion architecture I'm now applying to my
