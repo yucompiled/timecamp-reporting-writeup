@@ -7,8 +7,7 @@ money.
 
 > **Note:** The production code lives in a private repo. This writeup
 > covers the architecture, the problems it solves, and the design
-> decisions behind it. Happy to walk through the real implementation in
-> an interview.
+> decisions behind it.
 
 ---
 
